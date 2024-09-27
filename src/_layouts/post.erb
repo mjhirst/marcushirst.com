@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<h1><%= data.title %></h1>
+
+<img class="headshot" src="<%= relative_url "images/#{ data.headshot }" %>">
+
+<%= yield %>

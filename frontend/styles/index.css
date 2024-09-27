@@ -1,0 +1,47 @@
+@import url('https://fonts.bunny.net/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quattrocento:wght@400;700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-serif;
+  background: #fafafa;
+  color: #444;
+}
+
+h1 {
+  @apply font-mono font-bold text-center text-2xl mb-6;
+}
+
+h3 {
+  @apply font-mono font-bold text-xl mb-6;
+}
+
+nav {
+  @apply font-mono font-bold text-center;
+}
+
+nav > a {
+  @apply hover:underline decoration-wavy decoration-1 underline-offset-4;
+}
+
+a {
+  @apply hover:underline;
+}
+
+p {
+  @apply mb-4 text-lg md:text-base;
+}
+
+main {
+  @apply mx-2 md:mx-auto my-6 md:my-16 max-w-prose
+}
+
+.yellow-pages {
+  @apply bg-gradient-to-b from-yellow-400 to-amber-500 text-amber-900;
+}
+
+.headshot {
+  @apply mb-6 mx-auto border border-black/10 rounded-md;
+}
