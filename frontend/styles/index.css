@@ -1,5 +1,7 @@
 @import url('https://fonts.bunny.net/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quattrocento:wght@400;700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+@import "syntax-highlighting.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,6 +13,10 @@ body {
 }
 
 h1 {
+  @apply font-mono font-bold text-center text-4xl mb-6;
+}
+
+h2 {
   @apply font-mono font-bold text-center text-2xl mb-6;
 }
 
@@ -30,12 +36,48 @@ a {
   @apply hover:underline;
 }
 
+p > a {
+  @apply text-blue-400 hover:text-blue-500 decoration-dashed underline hover:decoration-solid;
+}
+
+li > a {
+  @apply text-blue-400 hover:text-blue-500 decoration-dashed underline hover:decoration-solid;
+}
+
 p {
   @apply mb-4 text-lg md:text-base;
 }
 
+p > em {
+  @apply block border-l-2 border-gray-400 bg-black/10 py-1 my-2 pl-2 ml-1 mr-2;
+}
+
+span.keycap {
+  @apply font-mono bg-black/5 rounded-md px-3 py-0.5 border border-black/10;
+}
+
+ol {
+  @apply list-decimal list-outside ml-4 mb-4;
+}
+
+ul {
+  @apply list-disc list-outside ml-4 mb-4;
+}
+
+li {
+  @apply list-item;
+}
+
+.highlight {
+  @apply text-sm;
+}
+
+code.highlighter-rouge {
+  @apply font-mono bg-black/5 rounded-md px-0.5 border border-black/10;
+}
+
 main {
-  @apply mx-2 md:mx-auto my-6 md:my-16 max-w-prose
+  @apply mx-2 md:mx-auto my-6 md:my-16 max-w-prose;
 }
 
 .yellow-pages {
