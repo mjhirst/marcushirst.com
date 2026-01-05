@@ -6,7 +6,7 @@ module.exports = {
     "./src/**/*.erb",
     "./src/*.html",
     "./src/*.erb",
-    "./frontend/styles/**/*.css'"
+    "./frontend/styles/**/*.css"
   ],
   theme: {
     screens: {
@@ -31,5 +31,9 @@ module.exports = {
     },
     container: [],
   },
-  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("daisyui"),
+  ],
 };

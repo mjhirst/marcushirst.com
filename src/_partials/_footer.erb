@@ -1,11 +1,6 @@
-<footer class=" py-4 w-full">
-  <div class="my-4 h-1 border-b-2 border-black/10"></div>
-  <div class="px-2 md:px-0 max-w-prose md:mx-auto">
-    <a href="<%= relative_url '/' %>">marcushirst.com</a>
-    <br>
-    <a class="my-2 px-1.5 py-1 border-2 border-black/10 rounded-md hover:black/10 shadow-sm" href="mailto:<%= metadata.email %>">
-      &#x2709; Email
-    </a>
-    <p>&copy; 2023&#x2014;<%= Time.now.year %> Marcus Hirst</p>
-  </div>
+<footer class="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4">
+  <aside class="flex items-center justify-center">
+    <svg class="fill-current" height="20" viewBox="0 0 59 49" width="30" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" class="fill-current" fill-rule="evenodd"><path d="m26.1644 37.0417c-2.7787-2.621-6.5248-4.2276-10.6461-4.2276-8.57053 0-15.5183 6.9478-15.5183 15.5183v.0001h29.1898z"/><path d="m42.2744 48.3157c.2404.0111.4822.0167.7253.0167 8.5705 0 15.5183-6.9478 15.5183-15.5183s-6.9478-15.5183-15.5183-15.5183c-3.0865 0-5.9625.9011-8.3794 2.4546z"/><path d="m16.2436.0166406c-.2403-.01105325-.482-.0166406-.7251-.0166406-8.57049 0-15.51825586 6.94777-15.51825586 15.5183 0 8.5705 6.94776586 15.5183 15.51825586 15.5183 3.0864 0 5.9624-.9011 8.3792-2.4545z"/><path d="m32.3535 11.2906c2.7787 2.6211 6.5248 4.2277 10.6461 4.2277 8.5705 0 15.5183-6.94776 15.5183-15.51826693v-.00003052l-29.1897-.00000255z"/></g></svg>
+    <span>&copy; 2023&#x2014;<%= Time.now.year %> Marcus Hirst</span>
+  </aside>
 </footer>

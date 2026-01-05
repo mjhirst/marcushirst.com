@@ -2,6 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <% resource_title = strip_html(strip_newlines(title)) %>
 <title><% if resource_title != "Index" %><%= resource_title %> | <%= metadata.title %><% else %><%= metadata.title %>: <%= metadata.tagline %><% end %></title>
+<%= feed_meta %>
 
 <meta name="description" content="<%= metadata.description %>" />
 

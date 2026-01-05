@@ -2,6 +2,7 @@
 layout: page
 title: Posts
 ---
+<a class="btn" href="<%= relative_url '/feed.xml' %> target='_blank'"> RSS </a>
 
 <ul>
   <% collections.posts.resources.each do |post| %>
@@ -10,5 +11,3 @@ title: Posts
     </li>
   <% end %>
 </ul>
-
-If you have a lot of posts, you may want to consider adding [pagination](https://www.bridgetownrb.com/docs/content/pagination)!

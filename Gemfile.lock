@@ -50,6 +50,8 @@ GEM
       thor (~> 1.1)
       tilt (~> 2.0)
       zeitwerk (~> 2.5)
+    bridgetown-feed (4.0.0)
+      bridgetown (>= 1.2.0)
     bridgetown-paginate (1.3.4)
       bridgetown-core (= 1.3.4)
     colorator (1.1.0)
@@ -133,7 +135,8 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  bridgetown (~> 1.3.4)
+  bridgetown (~> 1.3)
+  bridgetown-feed (~> 4.0)
   puma (< 7)
 
 BUNDLED WITH
